@@ -1,0 +1,11 @@
+{
+  "name": "astrology-ai",
+  "description": "Generate and interpret Vedic astrology birth charts - D1-D60 divisional charts, Panchanga, Shadbala, 3-level Vimshottari Dasha, Ashtakavarga, and KP (Krishnamurthi Paddhati) significators/sublords/horary.",
+  "version": "1.0.0",
+  "author": {
+    "name": "myu-1987 (Mahesh Patil)"
+  },
+  "license": "MIT",
+  "keywords": ["vedic", "astrology", "jyotish", "kp", "horoscope", "birth-chart", "panchanga", "dasha"],
+  "skills": "./astrology-ai/"
+}

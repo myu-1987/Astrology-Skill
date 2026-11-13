@@ -1,0 +1,24 @@
+{
+  "name": "astrology-skill",
+  "owner": {
+    "name": "myu-1987"
+  },
+  "metadata": {
+    "description": "Vedic (Jyotish) astrology Agent Skill: birth charts, Panchanga, dasha, Ashtakavarga, and KP significators/horary.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "astrology-ai",
+      "source": "./",
+      "description": "Generate and interpret Vedic astrology birth charts - D1-D60 divisional charts, Panchanga, Shadbala, 3-level Vimshottari Dasha, Ashtakavarga, and KP (Krishnamurthi Paddhati) significators/sublords/horary.",
+      "version": "1.0.0",
+      "author": {
+        "name": "myu-1987 (Mahesh Patil)"
+      },
+      "keywords": ["vedic", "astrology", "jyotish", "kp", "horoscope", "birth-chart", "panchanga", "dasha"],
+      "category": "productivity",
+      "strict": false
+    }
+  ]
+}

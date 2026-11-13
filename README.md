@@ -34,17 +34,35 @@ fit this pass's scope.
 
 ## Install
 
-### Claude Code
+### Claude Code (plugin - easiest)
 
-```bash
-git clone <this-repo-url>
-cp -r astrology-skill/astrology-ai ~/.claude/skills/astrology-ai
-cd ~/.claude/skills/astrology-ai && pip install -r requirements.txt
+This repo is a Claude Code plugin marketplace (`.claude-plugin/`), so no
+manual clone/copy is needed:
+
+```
+/plugin marketplace add myu-1987/Astrology-Skill
+/plugin install astrology-ai@astrology-skill
 ```
 
-(Or point Claude Code at a plugin/marketplace entry for this repo, if
-you're distributing it that way - any mechanism that makes `astrology-ai/`
-available as a skill directory works, since it's a standard Agent Skill.)
+Then, from a terminal, install the Python dependencies once (plugin install
+copies files but doesn't run `pip` for you):
+
+```bash
+cd ~/.claude/plugins/marketplaces/astrology-skill/astrology-ai   # or wherever your plugin cache lives
+pip install -r requirements.txt
+```
+
+The skill is then available as `/astrology-ai:astrology-ai` (or just ask
+Claude Code for a birth chart / horoscope / Panchanga - the skill's
+description is written to trigger automatically on that kind of request).
+
+### Claude Code (manual, without the plugin system)
+
+```bash
+git clone https://github.com/myu-1987/Astrology-Skill.git
+cp -r Astrology-Skill/astrology-ai ~/.claude/skills/astrology-ai
+cd ~/.claude/skills/astrology-ai && pip install -r requirements.txt
+```
 
 ### Codex CLI / Gemini CLI / Cursor / VS Code (and other Agent-Skills-compatible tools)
 
