@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Generated chart output — users' birth data, never commit
+Charts/
+astrology-ai/Charts/
+
+.DS_Store

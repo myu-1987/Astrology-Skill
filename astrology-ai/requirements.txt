@@ -1,0 +1,18 @@
+# Core Vedic astrology engine (D1-D60 charts, panchanga, shadbala, ashtakavarga).
+# Both of these libraries have had breaking changes between minor releases —
+# pin exact versions and re-run tests/ before bumping either one.
+jyotishganit==0.1.7
+
+# KP (Krishnamurthi Paddhati) specialist layer: significators, sublords, horary.
+# Pin to the version you tested against; verify current release on PyPI before install:
+# https://pypi.org/project/vedicastro/
+vedicastro==0.2.0
+
+# vedicastro depends on a *forked* flatlib (sidereal branch) for sidereal ayanamsa
+# constants. PyPI does not resolve git dependencies declared in another package's
+# install_requires, so it must be listed here explicitly. Installing vanilla PyPI
+# flatlib instead of this fork will break with:
+#   AttributeError: module 'flatlib.const' has no attribute 'AY_LAHIRI'
+flatlib @ git+https://github.com/diliprk/flatlib.git@sidereal#egg=flatlib
+
+pytest>=8.0.0
